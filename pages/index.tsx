@@ -35,7 +35,7 @@ export default function Home() {
         />
       </Head>
 
-      <main className={"bg-gray-900 font-inter my-32"}>
+      <main className={"bg-gray-900 font-inter my-32 px-10 md:px-0"}>
         <Section>
           <header className={"flex items-center justify-between"}>
             <div className={"flex"}>
