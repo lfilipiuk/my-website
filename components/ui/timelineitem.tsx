@@ -23,13 +23,13 @@ const TimelineItem = ({
     ? "w-6 flex justify-center"
     : "h-full w-6 flex justify-center";
 
-  const lastLineMargin = last ? "-mt-5 -ml-4" : "-mt-5 -ml-4 my-16";
+  const lastLineMargin = last ? "-mt-5 -ml-4" : "  -mt-5 -ml-4 my-16";
 
   return (
     <div className="flex flex-row-reverse">
       <div className={lastLineMargin}>
         <h4 className="text-sm mb-0.5 text-gray-500">{duration}</h4>
-        <h3 className="text-lg mb-1 text-gray-300">{title}</h3>
+        <h3 className="text-lg text-gray-300 leading-8">{title}</h3>
         <p className="leading-tight text-justify text-gray-400">
           {description}
         </p>

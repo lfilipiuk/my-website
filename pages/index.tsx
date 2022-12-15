@@ -68,7 +68,7 @@ export default function Home() {
 
         <Section>
           <Title name={"about me"} />
-          <p className={"leading-7 text-gray-100"}>
+          <p className={"leading-7 text-gray-400"}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
