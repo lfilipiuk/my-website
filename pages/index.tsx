@@ -212,7 +212,7 @@ export default function Home() {
                 presented the discussed tools in an accessible
               </span>{" "}
               way and helped course participants in the event of problems with
-              taking the "step by step" approach.“
+              taking the &quot;step by step&quot; approach.“
             </p>
           </div>
           <div className={"text-white italic text-gray-400 py-3 leading-7"}>
