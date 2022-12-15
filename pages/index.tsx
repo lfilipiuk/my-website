@@ -12,7 +12,6 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { useRouter } from "next/router";
 import Section from "../components/ui/section";
 import Title from "../components/ui/title";
-import Timeline from "../components/ui/timeline";
 import NewTimeline from "../components/ui/newtimeline";
 
 export default function Home() {
