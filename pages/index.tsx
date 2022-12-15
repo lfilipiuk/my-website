@@ -32,9 +32,9 @@ export default function Home() {
         />
       </Head>
 
-      <main className={"bg-gray-900 font-inter py-9"}>
+      <main className={"bg-gray-900 font-inter my-32"}>
         <section className={"max-w-2xl mx-auto"}>
-          <header className={"mt-20 flex items-center justify-between"}>
+          <header className={"flex items-center justify-between"}>
             <div className={"flex"}>
               <div
                 className={
@@ -62,8 +62,8 @@ export default function Home() {
             </div>
           </header>
 
-          <div className={"py-9"}>
-            <h1 className={"font-semibold text-gray-600"}>ABOUT ME</h1>
+          <div className={"my-11"}>
+            <h1 className={"font-semibold text-gray-600 mb-3"}>ABOUT ME</h1>
             <p className={"leading-7 text-gray-100"}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -74,9 +74,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={"max-w-2xl mx-auto py-9"}>
+        <section className={"max-w-2xl mx-auto my-11"}>
           <div>
-            <h1 className={"font-semibold text-gray-600"}>I TAUGHT AT</h1>
+            <h1 className={"font-semibold text-gray-600 mb-3"}>I TAUGHT AT</h1>
           </div>
           <div className={"flex  flex-wrap gap-1 justify-center items-center"}>
             <div className={"flex-auto"}>
@@ -100,28 +100,29 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={"max-w-2xl mx-auto py-9"}>
+        <section className={"max-w-2xl mx-auto my-11"}>
           <div>
-            <h1 className={"font-semibold text-gray-600 py-2"}>PORTFOLIO</h1>
+            <h1 className={"font-semibold text-gray-600 mb-3"}>PORTFOLIO</h1>
           </div>
           <div
             className={
-              "transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 cursor-pointer"
+              "transition ease-in-out hover:-translate-y-1 hover:shadow-xl duration-200 cursor-pointer"
             }
             onClick={handlePortfolioClick}
           >
             <Image
               className={"rounded-lg object-cover"}
               width={700}
+              height={200}
               src={portfolio}
               alt={"Portfolio image"}
             />
           </div>
         </section>
 
-        <section className={"max-w-2xl mx-auto py-12"}>
+        <section className={"max-w-2xl mx-auto my-11"}>
           <div>
-            <h1 className={"font-semibold text-gray-600 py-6"}>
+            <h1 className={"font-semibold text-gray-600 mb-3"}>
               MY EXPERIENCE
             </h1>
           </div>
@@ -173,11 +174,11 @@ export default function Home() {
                     Something
                   </h4>
                 </div>
-                <div className="ml-6 mb-6 pb-6">
+                <div className="ml-6">
                   <p className="text-gray-400 text-gray-600-700 text-sm">
                     1990 -{">"} 2000
                   </p>
-                  <p className="text-gray-400 mt-2 mb-4">
+                  <p className="text-gray-400 mt-2">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -189,9 +190,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={"max-w-2xl mx-auto"}>
+        <section className={"max-w-2xl mx-auto my-11"}>
           <div>
-            <h1 className={"font-semibold text-gray-600"}>
+            <h1 className={"font-semibold text-gray-600 mb-3"}>
               WHAT OTHERS SAY ABOUT ME
             </h1>
           </div>
