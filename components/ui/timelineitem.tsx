@@ -30,7 +30,7 @@ const TimelineItem = ({
       <div className={lastLineMargin}>
         <h4 className="text-sm mb-0.5 text-gray-500">{duration}</h4>
         <h3 className="text-lg text-gray-300 leading-8">{title}</h3>
-        <p className="leading-tight text-gray-400">{description}</p>
+        <p className="text-gray-400 leading-7">{description}</p>
       </div>
 
       <div className="relative mr-10">
