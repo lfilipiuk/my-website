@@ -128,7 +128,7 @@ export default function Home() {
 
         <Section>
           <Title name={"what others say about me"} />
-          <div className={"text-white italic text-gray-400 py-2 leading-7"}>
+          <div className={"text-white italic text-gray-400 pb-2 leading-7"}>
             <p>
               “I am once again very impressed with the{" "}
               <span className={"font-bold text-gray-200"}>
