@@ -8,19 +8,13 @@ import novo from "../public/novo-nordisk.svg";
 import mf from "../public/mf.svg";
 import euronet from "../public/euronet.svg";
 import portfolio from "../public/portfolio.png";
-import { AiFillLinkedin } from "react-icons/ai";
-import { useRouter } from "next/router";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import Section from "../components/ui/section";
 import Title from "../components/ui/title";
 import NewTimeline from "../components/ui/newtimeline";
+import Portfolio from "../components/portfolio/Portfolio";
 
 export default function Home() {
-  const router = useRouter();
-
-  const handlePortfolioClick = () => {
-    router.push("/portfolio");
-  };
-
   return (
     <div>
       <Head>
@@ -55,12 +49,26 @@ export default function Home() {
                 <p className={"text-white font-newsreader text-2xl"}>
                   Łukasz Filipiuk
                 </p>
-                <p className={"text-xl text-gray-500"}>Some text goes here</p>
+                <p className={"text-xl text-gray-500"}>Developer and Teacher</p>
               </div>
             </div>
-            <div className={"text-gray-600 hover:text-gray-200 text-4xl"}>
-              <a href={"https://www.linkedin.com/in/lfilipiuk/"}>
+
+            <div className={"flex gap-2"}>
+              <a
+                className={
+                  "text-gray-600 hover:text-gray-200 text-4xl transition-all duration-200 ease-in-out"
+                }
+                href={"https://www.linkedin.com/in/lfilipiuk/"}
+              >
                 <AiFillLinkedin />
+              </a>
+              <a
+                className={
+                  "text-gray-600 hover:text-gray-200 text-4xl transition-all duration-200 ease-in-out"
+                }
+                href={"https://github.com/lfilipiuk"}
+              >
+                <AiFillGithub />
               </a>
             </div>
           </header>
@@ -69,11 +77,14 @@ export default function Home() {
         <Section>
           <Title name={"about me"} />
           <p className={"leading-7 text-gray-400"}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris.
+            I am a highly motivated and enthusiastic software developer with
+            experience in both backend and frontend development. I have a strong
+            passion for learning and continuously improving my skills. I have
+            been a mentor and instructor in the past, sharing my knowledge and
+            experience with others. I am a quick learner and thrive in
+            fast-paced, challenging environments. I am confident that my
+            attention to detail, creative problem-solving skills, and ability to
+            work well with others will make me a valuable addition to any team.
           </p>
         </Section>
 
@@ -105,20 +116,7 @@ export default function Home() {
         <Section>
           <Title name={"portfolio"} />
 
-          <div
-            className={
-              "transition ease-in-out hover:-translate-y-1 hover:shadow-xl duration-200 cursor-pointer pt-2"
-            }
-            onClick={handlePortfolioClick}
-          >
-            <Image
-              className={"rounded-lg object-cover"}
-              width={700}
-              height={200}
-              src={portfolio}
-              alt={"Portfolio image"}
-            />
-          </div>
+          <Portfolio />
         </Section>
 
         <Section>
