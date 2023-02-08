@@ -1,11 +1,12 @@
 import Image, { StaticImageData } from "next/image";
-import { router } from "next/client";
+import { useRouter } from "next/router";
 
 interface PortfolioItemProps {
   image: StaticImageData;
 }
-
 const PortfolioItem = ({ image }: PortfolioItemProps) => {
+  const router = useRouter();
+
   const handlePortfolioClick = () => {
     router.push("/portfolio");
   };
