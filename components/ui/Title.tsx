@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./Section.module.css";
 
 type Props = {
   name: string;
