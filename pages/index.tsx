@@ -11,7 +11,7 @@ import portfolio from "../public/portfolio.png";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import Section from "../components/ui/section";
 import Title from "../components/ui/title";
-import NewTimeline from "../components/ui/newtimeline";
+import Timeline from "../components/ui/Timeline";
 import Portfolio from "../components/portfolio/Portfolio";
 
 export default function Home() {
@@ -121,7 +121,7 @@ export default function Home() {
 
         <Section>
           <Title name={"my experience"} />
-          <NewTimeline />
+          <Timeline />
         </Section>
 
         <Section>

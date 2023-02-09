@@ -1,7 +1,7 @@
 import React from "react";
-import TimelineItem from "./timelineitem";
+import TimelineItem from "./TimelineItem";
 
-const NewTimeline = () => {
+const Timeline = () => {
   return (
     <div className="flex flex-col mx-auto text-gray-100 pt-9">
       <TimelineItem
@@ -33,4 +33,4 @@ const NewTimeline = () => {
   );
 };
 
-export default NewTimeline;
+export default Timeline;
