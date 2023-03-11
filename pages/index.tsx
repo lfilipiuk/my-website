@@ -7,15 +7,10 @@ import Timeline from "../components/ui/Timeline";
 import Portfolio from "../components/portfolio/Portfolio";
 
 import lukasz from "../public/avatar-lukasz.png";
-import mars from "../public/portfolio/mars.svg";
-import bain from "../public/portfolio/bain.svg";
-import deloitte from "../public/portfolio/deloitte.svg";
-import novo from "../public/portfolio/novo-nordisk.svg";
-import mf from "../public/portfolio/mf.svg";
-import euronet from "../public/portfolio/euronet.svg";
 import portfolio from "../public/portfolio.png";
 
 import { companies } from "../utils/images";
+import ImageSlider from "../components/carousel/ImageSlider";
 
 export default function Home() {
   // @ts-ignore
@@ -92,7 +87,7 @@ export default function Home() {
 
         <Section>
           <Title name={"i taught at"} />
-          <div className={"overflow-hidden relative w-full"}>
+          <div className={"relative w-full overflow-hidden"}>
             <div
               className={
                 "bg-gradient-to-r from-transparent to-[#0A0A0F] h-28 absolute w-1/3 right-0 z-10"
@@ -103,38 +98,7 @@ export default function Home() {
                 "bg-gradient-to-l from-transparent to-[#0A0A0F] h-28 absolute w-1/3 left-0 z-10"
               }
             />
-
-            <div className="w-[200%] h-28 relative">
-              <div className="w-[200%] flex items-center h-28 justify-around absolute left-0 animate">
-                <div className="flex gap-4 w-full items-center">
-                  {companies.map((company, index) => {
-                    // @ts-ignore
-                    return (
-                      <Image
-                        src={company.logo}
-                        alt={company.name}
-                        key={index}
-                        height={32}
-                      />
-                    );
-                  })}
-                </div>
-
-                <div className="flex gap-4 w-full items-center">
-                  {companies.map((company, index) => {
-                    // @ts-ignore
-                    return (
-                      <Image
-                        src={company.logo}
-                        alt={company.name}
-                        key={index}
-                        height={32}
-                      />
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
+            <ImageSlider images={companies} />
           </div>
         </Section>
 

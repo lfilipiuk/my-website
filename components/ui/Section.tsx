@@ -5,7 +5,11 @@ type Props = {
 };
 
 const Section = ({ children }: Props) => {
-  return <section className={"max-w-4xl mx-auto my-16"}>{children}</section>;
+  return (
+    <section className={"lg:max-w-4xl max-w-xl mx-auto my-16"}>
+      {children}
+    </section>
+  );
 };
 
 export default Section;
