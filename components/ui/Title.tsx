@@ -7,7 +7,7 @@ type Props = {
 const Title = ({ name }: Props) => {
   const formattedName = name.toUpperCase();
   return (
-    <h1 className={"font-semibold text-gray-600 text-sm mb-3 tracking-widest"}>
+    <h1 className={"font-semibold opacity-70 text-sm mb-3 tracking-widest"}>
       {formattedName}
     </h1>
   );

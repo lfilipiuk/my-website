@@ -10,6 +10,14 @@ module.exports = {
       fontFamily: {
         inter: "Inter",
         newsreader: "Newsreader",
+        mona: ["Mona"],
+        sans: ["Mona", "sans-serif"],
+      },
+      colors: {
+        feather: {
+          dark: "#3B3B3F",
+          DEFAULT: "#EDEDEF",
+        },
       },
     },
   },

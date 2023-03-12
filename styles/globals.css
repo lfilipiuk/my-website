@@ -3,6 +3,34 @@
 @tailwind utilities;
 @tailwind variants;
 
+@font-face {
+  font-family: "Mona";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../public/fonts/Mona-Sans-Regular.otf");
+}
+
+@font-face {
+  font-family: "Mona";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../public/fonts/Mona-Sans-Medium.otf");
+}
+
+@font-face {
+  font-family: "Mona";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../public/fonts/Mona-Sans-SemiBold.otf");
+}
+
+@font-face {
+  font-family: "Mona";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../public/fonts/Mona-Sans-Bold.otf");
+}
+
 html,
 body {
   padding: 0;
