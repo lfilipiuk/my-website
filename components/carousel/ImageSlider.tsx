@@ -1,12 +1,8 @@
-import companies from "../../public/companies/companies.png";
+import companies from "../../public/companies/companies1.png";
 import Image from "next/image";
 
 const ImageSlider = () => {
   const sectionWidth = companies.width * 2;
-
-  const stringWidth = `w-[${sectionWidth}px]`;
-
-  console.log(stringWidth);
 
   return (
     <div
