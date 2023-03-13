@@ -10,9 +10,16 @@ interface Props {
     icon: JSX.Element;
     text: string;
   };
+  color?: string;
 }
 
-const PortfolioDesktopLink: FC<Props> = ({ link, github, website, custom }) => {
+const PortfolioDesktopLink: FC<Props> = ({
+  link,
+  github,
+  website,
+  custom,
+  color,
+}) => {
   let icon;
   let text;
   if (github) {
@@ -26,11 +33,11 @@ const PortfolioDesktopLink: FC<Props> = ({ link, github, website, custom }) => {
     text = custom.text;
   }
 
+  const textColor = color ? color : "text-feather";
+
   return (
     <Link
-      className={
-        "flex items-center justify-center gap-1 font-semibold text-sm text-gray-700"
-      }
+      className={`flex items-center justify-center gap-1 font-semibold text-sm ${textColor}`}
       href={link}
       rel="noopener noreferrer"
       target="_blank"

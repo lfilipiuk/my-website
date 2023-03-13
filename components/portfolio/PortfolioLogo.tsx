@@ -11,7 +11,7 @@ const PortfolioWrapper: FC<Props> = ({ image }) => {
       src={image}
       alt={"portfolio logo"}
       height={30}
-      className={"mb-3 pointer-events-none invert sm:invert-0 mx-auto sm:mx-0"}
+      className={"mb-3 pointer-events-none mx-auto sm:mx-0"}
     />
   );
 };

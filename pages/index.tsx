@@ -8,28 +8,28 @@ import Portfolio from "../components/portfolio/Portfolio";
 import lukasz from "../public/avatar-lukasz.png";
 import portfolio from "../public/portfolio.png";
 
-import { companies } from "../utils/images";
 import ImageSlider from "../components/carousel/ImageSlider";
 import Opinion from "../components/opinions/Opinion";
 import SocialIcon from "../components/ui/SocialIcon";
 
 export default function Home() {
-  // @ts-ignore
-  // @ts-ignore
-  // @ts-ignore
   return (
     <div>
       <Head>
         <title>Lukasz Filipiuk</title>
         <meta name="description" content="Lukasz Filipiuk" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
       </Head>
 
       <main className={"font-mona my-32 px-5 md:px-0 text-feather"}>
         <Section>
-          <header className={"flex items-center justify-between"}>
+          <header
+            className={
+              "flex sm:flex-row sm:gap-0 gap-4 flex-col sm:items-center  sm:justify-between"
+            }
+          >
             <div className={"flex"}>
               <div
                 className={
@@ -66,7 +66,7 @@ export default function Home() {
               />
               <a
                 className={
-                  "sm:block hidden py-2 px-3 rounded-full text-white bg-white bg-opacity-[8%] hover:bg-opacity-20 transition-all duration-200 ease-in-out"
+                  "block py-2 px-3 rounded-full text-white bg-white bg-opacity-[8%] hover:bg-opacity-20 transition-all duration-200 ease-in-out"
                 }
                 href={"mailto:contact@lukaszfilipiuk.com"}
               >
