@@ -13,6 +13,10 @@ import mealmasterLogo from "../../public/portfolio/mealmaster-logo.png";
 import mealmastermockup from "../../public/portfolio/mealmaster-mockup.png";
 
 const Portfolio = () => {
+  const horizontalLine = (
+    <hr className="h-px w-36 my-8 bg-black border-0 opacity-20" />
+  );
+
   return (
     <>
       <PortfolioItemWrapper backgroundColor={"bg-[#CDE5CD]"}>
@@ -34,7 +38,7 @@ const Portfolio = () => {
               of AI chef!
             </p>
 
-            <hr className="h-px w-36 my-8 bg-black border-0 opacity-50" />
+            {horizontalLine}
 
             <div className={"gap-4 flex"}>
               <PortfolioDesktopLink
@@ -84,7 +88,7 @@ const Portfolio = () => {
               popular design colors. Give it a try today!
             </p>
 
-            <hr className="h-px w-36 my-8 bg-feather border-0 opacity-50" />
+            {horizontalLine}
 
             <div className={"gap-4 flex"}>
               <PortfolioDesktopLink
@@ -132,7 +136,7 @@ const Portfolio = () => {
               engaging way.
             </p>
 
-            <hr className="h-px w-36 my-8 bg-black border-0 opacity-50" />
+            {horizontalLine}
 
             <div className={"gap-4 flex"}>
               <PortfolioDesktopLink
