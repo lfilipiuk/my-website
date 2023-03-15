@@ -10,7 +10,7 @@ const PortfolioItemWrapper: FC<Props> = ({ children, backgroundColor }) => {
 
   return (
     <div
-      className={`w-full sm:h-80 h-[30em] ${bgColor} rounded-lg overflow-hidden my-5 relative`}
+      className={`w-full sm:h-80 h-[30em] ${bgColor} rounded-lg overflow-hidden my-5 relative group`}
     >
       {children}
     </div>

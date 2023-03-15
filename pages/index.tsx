@@ -10,7 +10,7 @@ import portfolio from "../public/portfolio.png";
 
 import ImageSlider from "../components/carousel/ImageSlider";
 import Opinion from "../components/opinions/Opinion";
-import SocialIcon from "../components/ui/SocialIcon";
+import SocialIcons from "../components/social/SocialIcons";
 
 export default function Home() {
   return (
@@ -55,24 +55,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className={"flex gap-2"}>
-              <SocialIcon
-                href={"https://www.linkedin.com/in/lfilipiuk/"}
-                type={"linkedin"}
-              />
-              <SocialIcon
-                href={"https://github.com/lfilipiuk"}
-                type={"github"}
-              />
-              <a
-                className={
-                  "block py-2 px-3 rounded-full text-white bg-white bg-opacity-[8%] hover:bg-opacity-20 transition-all duration-200 ease-in-out"
-                }
-                href={"mailto:contact@lukaszfilipiuk.com"}
-              >
-                Contact me
-              </a>
-            </div>
+            <SocialIcons />
           </header>
         </Section>
 
@@ -84,8 +67,7 @@ export default function Home() {
             opportunity to share my knowledge with others as a mentor and
             instructor. I&apos;m confident that with my attention to detail and
             willingness to take on new challenges, I can make a positive
-            contribution to any team. Thanks for taking the time to get to know
-            me!
+            contribution to any team.
           </p>
         </Section>
 
@@ -145,6 +127,17 @@ export default function Home() {
               thirdPart: "despite the long training day.",
             }}
           />
+        </Section>
+
+        <Section>
+          <div
+            className={
+              "flex sm:flex-row flex-col justify-between sm:items-center items-start gap-2"
+            }
+          >
+            <p>Thanks for taking the time to get to know me!</p>
+            <SocialIcons />
+          </div>
         </Section>
       </main>
     </div>
