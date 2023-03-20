@@ -141,7 +141,7 @@ const Portfolio = () => {
             <div className={"gap-4 flex"}>
               <PortfolioDesktopLink
                 github
-                link={"https://github.com/lfilipiuk/hexhunter"}
+                link={"https://github.com/lfilipiuk/quizquest"}
                 color={"text-black"}
               />
 

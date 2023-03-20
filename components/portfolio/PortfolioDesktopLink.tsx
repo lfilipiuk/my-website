@@ -37,13 +37,13 @@ const PortfolioDesktopLink: FC<Props> = ({
 
   return (
     <Link
-      className={`flex items-center justify-center gap-1 font-semibold text-sm ${textColor}`}
+      className={`flex items-center justify-center gap-1 font-semibold text-sm hover:underline ${textColor}`}
       href={link}
       rel="noopener noreferrer"
       target="_blank"
     >
       {icon}
-      <h3 className={"hover:underline"}>{text}</h3>
+      <h3>{text}</h3>
     </Link>
   );
 };
