@@ -5,10 +5,10 @@ const Timeline = () => {
   return (
     <div className="flex flex-col mx-auto pt-9">
       <TimelineItem
-        title={"Software Developer"}
-        duration={"Now"}
+        title={"Software Developer at Playdate"}
+        duration={"2023 → Now"}
         description={
-          "As a software developer, I am expanding my skill set by learning front-end development to become a full-stack developer. My focus is on mastering essential technologies and working with popular libraries and frameworks like React and NextJS to build dynamic, responsive web applications. I'm excited to combine my back-end development experience with my growing front-end skills to create full-stack solutions that meet the needs of clients and end-users."
+          "I am full-stack developer responsible for building and maintaining the Playdate mobile application. I work with React Native, Redux and Node.js"
         }
         highlighted={true}
       />

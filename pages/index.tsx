@@ -6,7 +6,6 @@ import Timeline from "../components/ui/Timeline";
 import Portfolio from "../components/portfolio/Portfolio";
 
 import lukasz from "../public/avatar-lukasz.png";
-import portfolio from "../public/portfolio.png";
 
 import ImageSlider from "../components/carousel/ImageSlider";
 import Opinion from "../components/opinions/Opinion";
@@ -51,7 +50,9 @@ export default function Home() {
                 >
                   Łukasz Filipiuk
                 </p>
-                <p className={"text-xl opacity-70"}>Developer and Teacher</p>
+                <p className={"text-xl opacity-70"}>
+                  Fullstack Software Developer and Educator
+                </p>
               </div>
             </div>
 
@@ -62,12 +63,12 @@ export default function Home() {
         <Section>
           <Title name={"about me"} />
           <p className={"leading-7"}>
-            Hey there! I&apos;m currently learning software development and
-            I&apos;m excited to continue building my skills. I&apos;ve had the
-            opportunity to share my knowledge with others as a mentor and
-            instructor. I&apos;m confident that with my attention to detail and
-            willingness to take on new challenges, I can make a positive
-            contribution to any team.
+            Hey there! I&apos;m a Fullstack software developer with current
+            focus on Frontend and I&apos;m excited to continue building my
+            skills. I&apos;ve had the opportunity to share my knowledge with
+            others as a mentor and instructor. I&apos;m confident that with my
+            attention to detail and willingness to take on new challenges, I can
+            make a positive contribution to any team.
           </p>
         </Section>
 
