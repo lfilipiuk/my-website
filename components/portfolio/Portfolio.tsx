@@ -15,6 +15,9 @@ import mealmastermockup from "../../public/portfolio/mealmaster-mockup.png";
 import progressLogo from "../../public/portfolio/progress-logo.png";
 import progressmockup from "../../public/portfolio/progress-mockup.png";
 
+import playdateLogo from "../../public/portfolio/playdate-logo.svg";
+import playdatemockup from "../../public/portfolio/playdate-mockup.png";
+
 const Portfolio = () => {
   const horizontalLine = (
     <hr className="h-px w-36 my-8 bg-black border-0 opacity-20" />
@@ -26,6 +29,60 @@ const Portfolio = () => {
 
   return (
     <>
+      <PortfolioItemWrapper backgroundColor={"bg-[#A7E9E7]"}>
+        <div
+          className={
+            "absolute sm:p-10 p-5 z-10 flex flex-col sm:justify-between justify-start w-full h-full"
+          }
+        >
+          <PortfolioLogo image={playdateLogo} />
+
+          <div className={"block"}>
+            <p
+              className={
+                "w-80 text-sm my-3 leading-6 text-black divide-y lg:w-80 sm:w-80"
+              }
+            >
+              The UK’s first dating app designed specifically for single
+              parents. Playdate offers up a safe space for parents to chat,
+              connect and date other parents searching for a meaningful
+              relationship.
+            </p>
+
+            {horizontalLine}
+
+            <div className={"gap-4 flex"}>
+              <a
+                href="https://apps.apple.com/gb/app/playdate-single-parent-dating/id1543519091"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/portfolio/download-appstore.svg"
+                  alt="Download on App Store"
+                  width={100}
+                  height={50}
+                />
+              </a>
+
+              <PortfolioDesktopLink link={'https://gotoplaydate.com'} website color={'text-black'} />
+            </div>
+          </div>
+        </div>
+
+        <Image
+          className={
+            "block absolute lg:left-[20%] lg:top-[-155%] lg:scale-[40%] lg:group-hover:scale-[45%] sm:top-[-70%] sm:left-[40%] sm:scale-[55%] sm:group-hover:scale-[60%] top-[15%] scale-[60%] transition duration-300 ease-in-out"
+          }
+          src={playdatemockup}
+          alt={"playdate mockup"}
+          style={{
+            objectFit: "fill",
+            pointerEvents: "none",
+          }}
+        />
+      </PortfolioItemWrapper>
+
       <PortfolioItemWrapper backgroundColor={"bg-[#252525]"}>
         <div
           className={
@@ -66,7 +123,7 @@ const Portfolio = () => {
 
         <Image
           className={
-            "block absolute lg:left-[30%] lg:top-[-65%] lg:scale-[65%] lg:group-hover:scale-[70%] sm:top-[-25%] sm:left-[40%] sm:scale-[70%] sm:group-hover:scale-[85%] top-[30%] scale-[60%] transition duration-300 ease-in-out"
+            "block absolute lg:left-[20%] lg:top-[-155%] lg:scale-[40%] lg:group-hover:scale-[45%] sm:top-[-70%] sm:left-[40%] sm:scale-[55%] sm:group-hover:scale-[60%] top-[15%] scale-[60%] transition duration-300 ease-in-out"
           }
           src={progressmockup}
           alt={"progress mockup"}
