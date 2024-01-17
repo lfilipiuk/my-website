@@ -63,12 +63,11 @@ export default function Home() {
         <Section>
           <Title name={"about me"} />
           <p className={"leading-7"}>
-            Hey there! I&apos;m a Fullstack software developer with current
-            focus on Frontend and I&apos;m excited to continue building my
-            skills. I&apos;ve had the opportunity to share my knowledge with
-            others as a mentor and instructor. I&apos;m confident that with my
-            attention to detail and willingness to take on new challenges, I can
-            make a positive contribution to any team.
+            Ambitious and creative Full Stack Developer and educator with solid
+            work ethics, good communication skills and experience in modern web
+            development technologies. Passionate about learning new skills and
+            building innovative solutions. Skilled in React, React Native,
+            TypeScript, Django and other full stack technologies.
           </p>
         </Section>
 
