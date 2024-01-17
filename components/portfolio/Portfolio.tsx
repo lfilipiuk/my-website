@@ -12,13 +12,71 @@ import quizquestmockup from "../../public/portfolio/quizquest-mockup.png";
 import mealmasterLogo from "../../public/portfolio/mealmaster-logo.png";
 import mealmastermockup from "../../public/portfolio/mealmaster-mockup.png";
 
+import progressLogo from "../../public/portfolio/progress-logo.png";
+import progressmockup from "../../public/portfolio/progress-mockup.png";
+
 const Portfolio = () => {
   const horizontalLine = (
     <hr className="h-px w-36 my-8 bg-black border-0 opacity-20" />
   );
 
+  const horizontalLineWhite = (
+    <hr className="h-px w-36 my-8 bg-white border-0 opacity-20" />
+  );
+
   return (
     <>
+      <PortfolioItemWrapper backgroundColor={"bg-[#252525]"}>
+        <div
+          className={
+            "absolute sm:p-10 p-5 z-10 flex flex-col sm:justify-between justify-start w-full h-full"
+          }
+        >
+          <PortfolioLogo image={progressLogo} />
+
+          <div className={"block"}>
+            <p
+              className={
+                "w-80 text-sm my-3 leading-6 text-white divide-y lg:w-80 sm:w-80"
+              }
+            >
+              Progress streamlines tracking workouts, nutrition, and physique.
+              Its focused interface highlights essential features, helping you
+              maximize workout performance.
+            </p>
+
+            {horizontalLineWhite}
+
+            <div className={"gap-4 flex"}>
+              <a
+                href="https://apps.apple.com/us/app/progress-workout-journal/id6468038363"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/portfolio/download-appstore.svg"
+                  alt="Download on App Store"
+                  width={100}
+                  height={50}
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <Image
+          className={
+            "block absolute lg:left-[30%] lg:top-[-65%] lg:scale-[65%] lg:group-hover:scale-[70%] sm:top-[-25%] sm:left-[40%] sm:scale-[70%] sm:group-hover:scale-[85%] top-[30%] scale-[60%] transition duration-300 ease-in-out"
+          }
+          src={progressmockup}
+          alt={"progress mockup"}
+          style={{
+            objectFit: "fill",
+            pointerEvents: "none",
+          }}
+        />
+      </PortfolioItemWrapper>
+
       <PortfolioItemWrapper backgroundColor={"bg-[#CDE5CD]"}>
         <div
           className={
